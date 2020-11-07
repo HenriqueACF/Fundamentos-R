@@ -28,20 +28,4 @@ is.matrix(vetorDados[1,1]) # Retorna como false, pois ele retorna como um vetor
 
 
 
-#Adicionando e removendo linhas na matriz
-vetorNomes2 <-c('joão', 'daniel', 'eliana')
-vetorIdade2 <- c(23, 24, 50)
-matrizNomes <-cbind(vetorNomes2,vetorIdade2)
 
-#atribuindo os nomes das colunas/linhas
-colnames(matrizNomes) <- vetorColunas
-rownames(matrizNomes) <- vetorLinhas
-
-#
-matrizTodosNomes <- rbind(vetorNome, vetorNomes2)
-#removendo a linha 2
-matrizTodosNomes <- matrizTodosNomes[-2,] 
-#removendo a coluna
-matrizTodosNomes[,-2]
-
-matrizTodosNomes[c(-1,-2)] 
