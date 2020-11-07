@@ -5,3 +5,5 @@ vetorJogadores
 factorJogadores <-factor(vetorJogadores)
 #mostra os classificados
 factorJogadores
+#mostra os dados individuais
+summary(factorJogadores)
