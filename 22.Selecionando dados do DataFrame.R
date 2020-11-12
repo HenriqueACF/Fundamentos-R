@@ -23,3 +23,10 @@ dfDados$vivo #retorna a coluna inteira
 order(dfDados$idade) #retorna um vetor de numeros
 dfDados[order(dfDados$idade),] #retorna a Idade do menor para o maior
 dfDados[order(dfDados$idade, decreasing = T),] #retorna  a Idade do maior para o menor
+
+#Retorna um vetor logico
+dfDados$nascimento > 1991
+#Retorna todos que tiverem o nascimento maior que 1991
+dfDados[dfDados$nascimento > 1991,]
+#retornando por sexo feminino de forma logica
+dfDados$sexo == "F"
